@@ -29,9 +29,11 @@ body{
     margin: 0;
     padding-top: 1px;
     border-radius: 10px;
+    float: top;
 }
 .help{
     text-align: left;
+    float: center;
 }
 .help-text{
     font-family: 'Times New Roman', serif;
@@ -43,7 +45,8 @@ body{
     background-color: rgba(0, 0, 0, .3);
     margin: 0;
     padding-top: 1px;
-    border-radius: 10px;
+    border-radius: 10px;bottom;
+    float: bottom;
 }
 .version{
     font-family: 'Times New Roman', serif;
