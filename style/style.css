@@ -1,35 +1,20 @@
-.fh1 {
-  font-size: 30px;
-  text-transform: uppercase;
-  font-style: italic;
-  font-family: 'William', serif;
-  margin-bottom: 2;
-  margin-top: 0;
-  padding-top: 25px;
-  font-weight: normal;
-  color: black;
-}
-.ddiv{
-  background-color: salmon;
-  height: 550px;
-  width: 40%;
-  text-align: center;
-  margin: auto;
-  background-image: linear-gradient(250deg, #f6d469 20%, #fda085 80%);
-  float:left
-}
 body{
     background-image: linear-gradient(250deg, #f6d469 20%, #fda085 80%);
+}
+.report_block{
+  text-align: center;
+  width: 500px;
+  height: 5vh;
+  border-radius: 100px;
+  padding-bottom: 5px;
+  background-color: rgba(0, 0, 0, .3);
+  cursor:pointer;
 }
 .release{
     text-align: center;
     height: 20vh;
-    width: 100%;
     background-color: rgba(0, 0, 0, .3);
-    margin: 0;
-    padding-top: 1px;
-    border-radius: 10px;
-    float: top;
+    border-radius: 50px;
 }
 .help{
     text-align: left;
@@ -41,14 +26,30 @@ body{
 .download{
     text-align: center;
     height: 20vh;
-    width: 100%;
     background-color: rgba(0, 0, 0, .3);
-    margin: 0;
-    padding-top: 1px;
-    border-radius: 10px;bottom;
-    float: bottom;
+    border-radius: 50px;
 }
 .version{
     font-family: 'Times New Roman', serif;
     font-size: 20px;
+}
+
+.hr-line{
+  border-top: 2px dashed #000;
+}
+
+.footer{
+  display: block;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.license{
+  margin-top: 0;
+  font-size: 12px;
+}
+
+.footer-title{
+  margin: auto;
+  font-size: 16px;
 }
