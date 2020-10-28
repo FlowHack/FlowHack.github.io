@@ -1,18 +1,223 @@
+
 body{
     background-image: linear-gradient(250deg, #f6d469 20%, #fda085 80%);
+    font-style: 'Times New Roman', serif;
 }
-.report_block{
+.contact_form {
+  font-size: 62.5%;
+  font-family: "Times New Roman", sans-serif;
+  font-weight: 600;
+}
+
+.contact_form section {
+  background-color: rgba(0, 0, 0, .3);
+  margin: 20px auto 20px;
   text-align: center;
-  width: 500px;
-  height: 5vh;
+  padding: 20px 0 20px;
+  width: 80%;
+  max-width: 800px;
+  border-radius: 50px;
+}
+
+.contact_form section h1 {
+  margin-bottom: 20px;
+  font-size: 4em;
+  text-transform: uppercase;
+  font-family: "Times New Roman", sans-serif;
+  font-weight: 400;
+  color: #393939;
+}
+
+.contact_form form {
+  width: 75%;
+  margin: 0 auto;
+  color: #f3be81;
+}
+
+.contact_form form .field {
+  width: 100%;
+  position: relative;
+  margin-bottom: 15px;
+  color: #f3be81;
+}
+
+.contact_form form .field label {
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #393939;
+  width: 100%;
+  padding: 18px 0;
+  font-size: 1.45em;
+  letter-spacing: 0.075em;
+  -webkit-transition: all 333ms ease-in-out;
+  -moz-transition: all 333ms ease-in-out;
+  -o-transition: all 333ms ease-in-out;
+  -ms-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
+  border-radius: 10px;
+}
+
+.contact_form form .msg-box label {
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #393939;
+  width: 100%;
+  padding: 42px 0;
+  font-size: 1.45em;
+  letter-spacing: 0.075em;
+  -webkit-transition: all 333ms ease-in-out;
+  -moz-transition: all 333ms ease-in-out;
+  -o-transition: all 333ms ease-in-out;
+  -ms-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
+  border-radius: 10px;
+}
+
+.contact_form form .field label + span {
+  opacity: 0;
+  color: white;
+  display: block;
+  position: absolute;
+  top: 12px;
+  left: 7%;
+  font-size: 2.5em;
+  text-shadow: 1px 2px 0 #cd6302;
+  -webkit-transition: all 333ms ease-in-out;
+  -moz-transition: all 333ms ease-in-out;
+  -o-transition: all 333ms ease-in-out;
+  -ms-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
+  border-radius: 50px;
+}
+
+.contact_form form .field input[type="text"],
+form .field textarea {
+  border: none;
+  border-radius: 10px;
+  background: #393939;
+  width: 80.6%;
+  font-family: "Times New Roman", sans-serif;
+  margin: 0;
+  padding: 18px 0;
+  padding-left: 19.5%;
+  color: #fff;
+  font-size: 1.4em;
+  letter-spacing: 0.05em;
+}
+
+.contact_form form .field input[type="text"]#msg,
+form .field textarea#msg {
+  border-radius: 10px;
+  resize: none;
+  font-size: 12px;
+  font-family: "Times New Roman", sans-serif;
+  -webkit-transition: all 333ms ease-in-out;
+  -moz-transition: all 333ms ease-in-out;
+  -o-transition: all 333ms ease-in-out;
+  -ms-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
+}
+
+.contact_form form .field input[type="text"]:focus,
+form .field input[type="text"].focused,
+form .field textarea:focus,
+form .field textarea.focused {
+  outline: none;
+  color: #f3be81;
+  font-family: "Times New Roman", sans-serif;
+}
+
+.contact_form form .field input[type="text"]:focus#msg,
+form .field input[type="text"].focused#msg,
+form .field textarea:focus#msg,
+form .field textarea.focused#msg {
+  font-size: 15px;
+  font-family: "Times New Roman", sans-serif;
+}
+
+.contact_form form .field input[type="text"]:focus + label,
+form .field input[type="text"].focused + label,
+form .field textarea:focus + label,
+form .field textarea.focused + label {
+  width: 18%;
+  background: #393939;
+  color: #fff;
+}
+
+.contact_form form .field input[type="text"].focused + label,
+form .field textarea.focused + label {
+  color: #fff;
+}
+
+.contact_form form .field:hover label {
+  width: 18%;
+  background: #f3be81;
+  color: #393939;
+}
+
+.contact_form form input[type="submit"] {
+  background: #f3be81;
+  color: #393939;
+  -webkit-appearance: none;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 50px;
+  text-transform: uppercase;
+  position: relative;
+  padding: 13px 50px;
+  font-size: 1.4em;
+  letter-spacing: 0.1em;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 300;
+  cursor: pointer;
+  -webkit-transition: all 333ms ease-in-out;
+  -moz-transition: all 333ms ease-in-out;
+  -o-transition: all 333ms ease-in-out;
+  -ms-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
+}
+
+.contact_form form input[type="submit"]:hover {
+  background: #393939;
+  color: #f3be81;
+}
+
+.contact_form form input[type="submit"]:focus {
+  outline: none;
+  background: #f3be81;
+  color: #393939;
+}
+
+@media (max-width: 765px) {
+  .contact_form form {
+  width: 100%;
+  }
+
+  .contact_form section {
+  width: 100%;
+  }
+}
+
+
+.report_block{
+  display: inline-block;
+  text-align: center;
+  width: 50%;
+  height: 5%;
   border-radius: 100px;
-  padding-bottom: 5px;
+  padding-bottom: 0;
   background-color: rgba(0, 0, 0, .3);
   cursor:pointer;
 }
 .release{
+    display: inline-block;
     text-align: center;
-    height: 20vh;
+    height: 20%;
+    width: 600px;
+    padding: 3px 5px 5px;
     background-color: rgba(0, 0, 0, .3);
     border-radius: 50px;
 }
