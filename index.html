@@ -4,7 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>F_Reference_H</title>
-        <link rel="stylesheet" href="style\style.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.2.3/jquery.min.js"></script>
+        <script src="script.js"></script>
         <link rel="icon" type="image" href="template\main_ico.ico">
     </head>
     <body>
@@ -13,47 +15,29 @@
         <p class="version" id="version"><i>Версия релиза:</i> <b>1</b></p>
         <p class="version"><i>Дата обновления: </i><b>None</b></p>
       </div>
-      <div class="help">
-          <h1 align="center">Помощь</h1>
-          <p class="help_text_title_pod" align="center">
-              <i>Приветствую вас на сайте программы <b><i>F_Reference_H <img src="download/png/ico_main.png"></i></b>!</i>
-Эта программа создана в виде <b>справочника</b>,
-задача которого заключается в облегчении хранения данных и их систематизации.
-</p><br>
-          <p class="help_text">
-              В программе есть несколько вкладок:
-              <ul class="help_text">
-                  <li><a href="#main_block">Главная</a></li>
-                  <li><a href="#other_block">Другое</a></li>
-                    <ul>
-                      <li><a href="#optimization">Оптимизация ID</a></li>
-                    </ul>
-                  <li><a href="#settings_block">Настройки</a></li>
-                  <li><a href="#report_block">Написать об ошибке</a></li>
-                  <li><a href="#help_block">Помощь [<img src="download/png/help.png">]</a></li>
-              </ul><br></p>
-              <h3 id="main_block" align="center" class="help_text_title">Главная</h3>
-              <p class="help_text_title">Эта вкладка основная. На ней вы можете <i><b>добавить новую запись</b></i> [<img src="download/png/add_file.png">],
-<i><b>удалить</b></i> (предварительно выделив нужную) [<img src="download/png/trash.png">],
-<i><b>обновить содержимое</b></i> списков записей [<img src="download/png/update.png">],
-а двойным щелчком по записи вы можете её открыть для просмотра и редактирования.<br>
-<p class="help_text_transfer">
-<b><i>Добавить новую запись</i></b>. Это сделать очень просто! Достаточно нажать на
- соответствующую кнопку [<img src="download/png/add_file.png">] над  тем списком, в который вы хотите добавить новую запись.
-списком записей.
-<br><br>
-<b><i>Удалить запись.</i></b> Просто нажмите один раз на запись, которую хотите удалить и над списком,
-в котором вы сделали выделение, нажмите на кнопку удаления записи [<img src="download/png/trash.png">]
-<br><br>
-<b><i>Обновить содержимое.</i></b> Эта кнопка [<img src="download/png/update.png">] служит для обновления
-обоих списков записей.
-<br><br>
-<b><i>Открыть/Редактировать запись.</i></b> Это сделать достаточно просто. Просто дважды быстро нажмите на интересующую
-вас запись и она откроется вам для редактирования и просмотра.
-</p>
-</p>
+      <section class='header_buttons'>
+        <div class="header_button">
+          <button class="button_top button_general" display='block' id="general"><b>Общая информация</b></button>
+          <button class="button_top" id="main_block"><b>Главная</b></button>
+          <button class="button_top" id="other_block"><b>Другое</b></button>
+          <button class="button_top button_settings" id="settings_block"><b>Настройки</b></button>
+          <button class="button_top button_report" id="report_block"><b>Обратная связь</b></button>
+          <button class="button_top button_img" id="help_block"><img height='20' src='download/png/help.png'></button>
+        </div>
 
-      </div>
+        <div class="content" id="general_content" style="display: block;">sdvsvs
+        </div>
+        <div class="content" id="main_content" style="display: none;">sdvsrgntn
+        </div>
+        <div class="content" id="other_content" style="display: none;">uolio.
+        </div>
+        <div class="content" id="settings_content" style="display: none;">wqewerfw
+        </div>
+        <div class="content" id="report_content" style="display: none;">il.o..
+        </div>
+        <div class="content" id="help_content" style="display: none;">wregeg
+        </div>
+      </section>
       <div class="download">
           <h2>Установочные файлы</h2>
           <h3 class="title_download">Ubuntu:
