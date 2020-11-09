@@ -17,40 +17,73 @@
       </div>
       <section class='header_buttons'>
         <div class="header_button">
-          <button class="button_top button_general" display='block' id="general"><b>Общая информация</b></button>
-          <button class="button_top" id="main_block"><b>Главная</b></button>
-          <button class="button_top" id="other_block"><b>Другое</b></button>
-          <button class="button_top button_settings" id="settings_block"><b>Настройки</b></button>
-          <button class="button_top button_report" id="report_block"><b>Обратная связь</b></button>
-          <button class="button_top button_img" id="help_block"><img height='20' src='download/png/help.png'></button>
+          <button class="button button_general" id="general"><b>Общая информация</b></button>
+          <button class="button" id="main_block"><b>Главная</b></button>
+          <button class="button" id="other_block"><b>Другое</b></button>
+          <button class="button button_settings" id="settings_block"><b>Настройки</b></button>
+          <button class="button button_report" id="report_block"><b>Обратная связь</b></button>
+          <button class="button button_img" id="help_block"><img height='20' src='download/png/help.png'></button>
         </div>
 
-        <div class="content" id="general_content" style="display: block;">sdvsvs
+        <div id="general_content" style="display: block;">
+          <section class="content">
+            <h2>Совсем скоро тут будет основной блок</h2>
+          </section>
         </div>
-        <div class="content" id="main_content" style="display: none;">sdvsrgntn
+        <div id="main_content" style="display: none;">
+          <section class="content">
+            <h2>Совсем скоро тут будет Главный блок</h2>
+          </section>
         </div>
-        <div class="content" id="other_content" style="display: none;">uolio.
+        <div class="content content_other" id="other_content" style="display: none;">
+          <div class="other_button">
+            <button class="button" id="general_other_block"><b>Общая информация</b></button>
+            <button class="button" id="optimization_block"><b>Оптимизация ID</b></button>
+            <button class="button" id="password_block"><b>Генератор паролей</b></button>
+          </div>
+          <div id="general_other_block_content" style="display: block;">
+            <section class="content">
+              <h2>Совсем скоро тут будет основной подблок блока другое</h2>
+            </section>
+          </div>
+          <div id="optimization_content" style="display: none;">
+            <section class="content">
+              <h2>Совсем скоро тут будет подблок оптимизации ID блока другое</h2>
+            </section>
+          </div>
+          <div id="password_content" style="display: none;">
+            <section class="content">
+              <h2>Совсем скоро тут будет подблок генератор паролей блока другое</h2>
+            </section>
+          </div>
         </div>
-        <div class="content" id="settings_content" style="display: none;">wqewerfw
+        <div id="settings_content" style="display: none;">
+          <section class="content">
+            <h2>Совсем скоро тут будет блок настроек</h2>
+          </section>
         </div>
-        <div class="content" id="report_content" style="display: none;">il.o..
+        <div id="report_content" style="display: none;">
+          <section class="content">
+            <h2>Совсем скоро тут будет блок обратной связи</h2>
+          </section>
         </div>
-        <div class="content" id="help_content" style="display: none;">wregeg
+        <div id="help_content" style="display: none;">
+          <section class="content">
+            <h2>Совсем скоро тут будет блок помощи</h2>
+          </section>
         </div>
       </section>
       <div class="download">
-          <h2>Установочные файлы</h2>
-          <h3 class="title_download">Ubuntu:
-            <a class="upload_from" download="Reference.deb" id="upload_from_linux" href="#">Исполняемый файл
-            </a><a class="upload_zip_from" download="Reference.zip" id="upload_zip_from_linux" href="#">Скачать архив
-            </a><br>
-            Windows: <a class="upload_from" download="Reference.exe" id="upload_from_windows" href="#">Исполняемый файл
-            </a><a class="upload_zip_from" download="Reference.zip" id="upload_zip_from_linux" href="#">Скачать архив
-            </a>
-          </h3>
-          <p class="ico">
-              <a href="download\png\cancel.png" download="cancel.png">Скачать пакет иконок</a>
-          </p>
+          <h2 class="title_download" >Установочные файлы</h2>
+          <div class='download_buttons'>
+            <button class="button os_btn" id="ubuntu_block"><b>Ubuntu</b></button>
+            <button class="button os_btn" id="windows_block"><b>Windows</b></button>
+          </div>
+
+          <div class="download_content" id="ubuntu" style="display: none;">efe
+          </div>
+          <div class="download_content" id="windows" style="display: none;">ghhj
+          </div>
       </div>
       <footer class="footer">
         <hr class="hr-line">
