@@ -25,7 +25,7 @@ body{
 .button{
   border-radius: 30px;
   padding: 6px 20px;
-  margin: 0 1px;
+  margin: 3px 1px;
   cursor: pointer;
   font-size: 95%;
   font-style: italic;
@@ -43,10 +43,9 @@ body{
 }
 .other_button{
   margin: 2px auto;
-  width: 35%;
-  background-color: #f3be81;
+  width: 45%;
   text-align: center;
-  border-radius: 50px;
+  border-radius: 30px;
   padding: 10px;
 }
 .content_other{
@@ -54,6 +53,10 @@ body{
 }
 .content_other button:hover{
   background-color: rgba(255, 255, 255, .3);
+}
+.download_content{
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 .release{
     text-align: center;

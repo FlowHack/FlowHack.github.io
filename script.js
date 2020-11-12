@@ -65,20 +65,6 @@ $(document).ready(function(){
         }
         return false;
     });
-    $("#ubuntu_block").click(function () {
-        if ($("#ubuntu").is(":hidden")) {
-            $("#ubuntu").show("slow");
-            $("#windows").hide("slow");
-        }
-        return false;
-    });
-    $("#windows_block").click(function () {
-        if ($("#windows").is(":hidden")) {
-            $("#windows").show("slow");
-            $("#ubuntu").hide("slow");
-        }
-        return false;
-    });
     $("#general_other_block").click(function () {
         if ($("#general_other_block_content").is(":hidden")) {
             $("#general_other_block_content").show("slow");
@@ -100,6 +86,20 @@ $(document).ready(function(){
             $("#password_content").show("slow");
             $("#optimization_content").hide("slow");
             $("#general_other_block_content").hide("slow");
+        }
+        return false;
+    });
+    $("#ubuntu_block").click(function () {
+        if ($("#ubuntu").is(":hidden")) {
+            $("#ubuntu").show("slow");
+            $("#windows").hide("slow");
+        }
+        return false;
+    });
+    $("#windows_block").click(function () {
+        if ($("#windows").is(":hidden")) {
+            $("#windows").show("slow");
+            $("#ubuntu").hide("slow");
         }
         return false;
     });
