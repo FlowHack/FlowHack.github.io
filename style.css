@@ -7,6 +7,11 @@ body{
     font-style: 'Times New Roman', serif;
     font-weight: normal;
 }
+pre {
+  font-family: "Liberation Mono", monospace;
+  font-size: 10pt;
+  background: transparent
+}
 .header_buttons{
   margin: 25px 0;
 
@@ -41,12 +46,31 @@ body{
   padding: 20px;
   background-color: #ffdaaa;
 }
+.content img:hover{
+  transform: scale(1.2,1.2);
+}
+.content_license{
+  width: 770px;
+}
 .other_button{
   margin: 2px auto;
   width: 45%;
   text-align: center;
   border-radius: 30px;
   padding: 10px;
+}
+.img_preview{
+  display: block;
+  margin: auto;
+  padding: 10px;
+  border-radius: 50px;
+  object-position: center;
+  width: 40%;
+  transform: scale(1,1);
+  transition: 0.3s ease;
+}
+.button_download_block button:hover{
+  background-color: rgba(255, 255, 255, .3);
 }
 .content_other{
   padding: 5px;
