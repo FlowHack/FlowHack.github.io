@@ -47,7 +47,7 @@ pre {
   background-color: #ffdaaa;
 }
 .content img:hover{
-  transform: scale(1.2,1.2);
+  transform: scale(1.35,1.27);
 }
 .content_license{
   width: 770px;
@@ -65,9 +65,9 @@ pre {
   padding: 10px;
   border-radius: 50px;
   object-position: center;
-  width: 40%;
+  width: 50%;
   transform: scale(1,1);
-  transition: 0.3s ease;
+  transition: 0.6s ease;
 }
 .button_download_block button:hover{
   background-color: rgba(255, 255, 255, .3);
