@@ -43,8 +43,11 @@ pre {
   margin: 20px auto;
   width: 95%;
   border-radius: 50px;
-  padding: 20px;
+  padding: 30px;
   background-color: #ffdaaa;
+}
+.content_other_block{
+  padding: 20px 100px;
 }
 .content img:hover{
   transform: scale(1.35,1.27);
