@@ -45,12 +45,16 @@ pre {
   border-radius: 50px;
   padding: 30px;
   background-color: #ffdaaa;
+  overflow:hidden;
 }
 .content_other_block{
-  padding: 20px 100px;
+  padding: 50px 200px;
 }
 .content img:hover{
   transform: scale(1.35,1.27);
+}
+.content .img_preview_past:hover{
+  transform: scale(1.2,1.15);
 }
 .content_license{
   width: 770px;
